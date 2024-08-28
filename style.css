@@ -377,7 +377,7 @@ p {
 
 .footer-content li a {
     display: block;
-    color: white;
+    color: black;
     font-size: 19px;
     font-weight: 400;
     transition: all .40s ease;
@@ -386,7 +386,7 @@ p {
 
 .footer-content li a:hover {
     transform: translateY(-3px) translateX(-5px);
-    color: white;
+    color: black;
 }
 .text-2{
   transition: all .40s ease;
