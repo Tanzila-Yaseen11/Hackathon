@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,16 +10,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 nav{
-   
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px auto;
+    margin: 20px auto;
+  
 }
 .logo img{
     width: 100%;
     height: auto;
+}
+.logo2 img{
+    width: auto;
+    height: 100%;
 }
 nav ul{
     width: 100%;
@@ -68,6 +72,21 @@ nav li:first-child{
 .menu-button{
     display: none;
 }
+.btn-1{
+    display: inline-block;
+    padding: 13px 32px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+    margin-right: 20px;
+}
+.btn-1:hover{
+   border: 2px solid var(--main-color);
+}
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
@@ -83,10 +102,11 @@ nav li:first-child{
 }
 
 :root{
-    --bg-color: white;
+    --bg-color: #white;
     --text-color: black;
-    --main-color: rgb(86, 218, 9);
-    --big-font: 5rem;
+    --main-color: #b9ff66;
+    --second-main-color:#f3f3f3;
+    --big-font: 3rem;
     --p-font: 1rem;
 }
 #menu-icon{
@@ -116,8 +136,8 @@ section{
     height: 100%;
 }
 .hero-text h1{
-    font-size: var(--big-font);
-    font-weight: 900;
+    font-size: 3rem;
+    font-weight: 700;
     margin: 15px 0;
     color: black;
 }
@@ -127,32 +147,33 @@ section{
     letter-spacing: 1px;
     color: black;
 }
-.hero-text p{
+#p1{
     width: 100%;
     max-width: 620px;
     font-size: var(--p-font);
     font-weight: 400;
+    margin: 15px 0;
     line-height: 32px;
     color: var(--text-color);
-    margin-bottom: 40px;
+   
 }
 .main-hero{
     display: flex;
     align-items: center;
 }
-.btn-2{
+.btn_1{
     display: inline-block;
     padding: 13px 32px;
-    background: var(--text-color);
+    background: var(--main-color);
     border: 2px solid transparent;
     border-radius: 7px;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
     transition: all .6s ease;
     margin-right: 20px;
 }
-.btn-2:hover{
+.btn_1:hover{
     transform: scale(1.1);
 }
 .price{
@@ -275,4 +296,205 @@ section{
 .logos{
     margin-left: 100px;
 }
+
+.t1{
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-left: 40px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+    margin-left: 40px;
+}
+#t1{
+    background-color: #b9ff66;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-left: 40px; 
+}
+#t2{
+    background-color: #f3f3f3;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-left: 40px; 
+}
+.container_1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+.container_1:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#s1 {
+    padding: 80px 13% 70px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    gap: 3.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+}
+
+.footer-content h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.footer-content li a {
+    display: block;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    transition: all .40s ease;
+    text-decoration: none;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: white;
+}
+.text-2{
+  transition: all .40s ease;
+}
+.text-2:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color:#013a22;
+  font-weight: 600;
+}
+
+
+/* From Uiverse.io by PauloRFJ */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 40px;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1.2s;
+    border-radius: 15px 0 15px 0px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 1.2s;
+    width: 45px;
+  }
+  /* facebook*/
+  .containerTwo:hover {
+    background-color: #0072b1;;
+    transition-duration: 1.2s;
+    width: 45px;
+  }
+  /* youtube*/
+  .containerThree:hover {
+    background-color: #FF0000;
+    transition-duration: 1.2s;
+    width: 45px;
+  }
+ 
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 1.2s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 1.2s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.images img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px black;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+.images img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+  
+
+
+
+
 
