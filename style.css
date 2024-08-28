@@ -365,7 +365,7 @@ p {
 }
 
 .footer-content h4 {
-    color: white;
+    color: black;
     margin-bottom: 1.5rem;
     font-size: 18px;
 }
@@ -393,7 +393,7 @@ p {
 }
 .text-2:hover{
   transform: translateY(-3px) translateX(-5px);
-  color:#013a22;
+  color:black;
   font-weight: 600;
 }
 
